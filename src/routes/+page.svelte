@@ -79,15 +79,49 @@
 
 	<div>
 		<form on:submit|preventDefault={compressFiles} class="flex flex-col">
-			<div>
-				<label for="name">名前</label>
-				<input type="text" id="name" name="name" on:input={updateFormData} />
+			<div class="font-bold py-1.5">
+				time:
+				<input type="text" class="ring-1" id="time" name="time" on:input={updateFormData} />
+			</div>
+			<div class="font-bold py-1.5">
+				platform:
+				<input type="text" class="ring-1" id="platform" name="platform" on:input={updateFormData} />
+			</div>
+			<div class="font-bold py-1.5">
+				type:
+				<input type="text" class="ring-1" id="type" name="type" on:input={updateFormData} />
+			</div>
+			<div class="font-bold py-1.5">
+				collection:
+				<input
+					type="text"
+					class="ring-1"
+					id="collection"
+					name="collection"
+					on:input={updateFormData}
+				/>
+			</div>
+			<div class="font-bold py-1.5">
+				gsd:
+				<input type="text" class="ring-1" id="gsd" name="gsd" on:input={updateFormData} />
+			</div>
+			<div class="font-bold py-1.5">
+				assets:
+				<input type="text" class="ring-1" id="assets" name="assets" on:input={updateFormData} />
+			</div>
+			<div class="font-bold py-1.5">
+				collection-description:
+				<input
+					type="text"
+					class="ring-1"
+					id="collection-description"
+					name="collection-description"
+					on:input={updateFormData}
+				/>
 			</div>
 			<div>
-				<label for="description">説明</label>
-				<input type="text" id="description" name="description" on:input={updateFormData} />
+				<button class="ring-1" type="submit">圧縮</button>
 			</div>
-			<button type="submit">圧縮</button>
 		</form>
 	</div>
 </div>
